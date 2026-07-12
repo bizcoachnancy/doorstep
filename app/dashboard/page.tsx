@@ -172,7 +172,7 @@ export default function Dashboard() {
           />
         </Card>
 
-        <Card title="4 · Send to">
+        <Card title="4 · Send To">
           <div style={{ display: "grid", gap: 8 }}>
             <Input placeholder="Recipient name" value={recipient.name} onChange={(v) => setRecipient({ ...recipient, name: v })} />
             <Input placeholder="Street address" value={recipient.street} onChange={(v) => setRecipient({ ...recipient, street: v })} />
@@ -193,7 +193,7 @@ export default function Dashboard() {
         </Card>
 
         {saved.length > 0 && (
-          <Card title={`Saved postcards (${saved.length})`}>
+          <Card title={`Saved Postcards (${saved.length})`}>
             <div style={{ display: "grid", gap: 12 }}>
               {saved.map((p) => (
                 <div key={p.id} style={{ display: "flex", alignItems: "center", gap: 10 }}>
