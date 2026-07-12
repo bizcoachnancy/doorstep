@@ -132,7 +132,7 @@ export default function Dashboard() {
             onClick={() => fileRef.current?.click()}
             style={{ width: "100%", padding: 14, borderRadius: 8, border: "none", background: "#16283D", color: "#fff", fontWeight: 600 }}
           >
-            📷 Take or Choose Photo
+            📸 Take or Choose Photo
           </button>
           {photoPreview && <img src={photoPreview} style={{ width: "100%", marginTop: 10, borderRadius: 8, maxHeight: 160, objectFit: "cover" }} />}
         </Card>
