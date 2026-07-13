@@ -174,9 +174,9 @@ export default function Dashboard() {
 
         <Card title="4 · Send To">
           <div style={{ display: "grid", gap: 8 }}>
-            <Input placeholder="Recipient name" value={recipient.name} onChange={(v) => setRecipient({ ...recipient, name: v })} />
-            <Input placeholder="Street address" value={recipient.street} onChange={(v) => setRecipient({ ...recipient, street: v })} />
-            <Input placeholder="Apt / unit (optional)" value={recipient.apt} onChange={(v) => setRecipient({ ...recipient, apt: v })} />
+            <Input placeholder="Recipient Name" value={recipient.name} onChange={(v) => setRecipient({ ...recipient, name: v })} />
+            <Input placeholder="Street Address" value={recipient.street} onChange={(v) => setRecipient({ ...recipient, street: v })} />
+            <Input placeholder="Apt / Unit (optional)" value={recipient.apt} onChange={(v) => setRecipient({ ...recipient, apt: v })} />
             <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr", gap: 8 }}>
               <Input placeholder="City" value={recipient.city} onChange={(v) => setRecipient({ ...recipient, city: v })} />
               <Input placeholder="ST" value={recipient.state} onChange={(v) => setRecipient({ ...recipient, state: v })} />
@@ -188,7 +188,7 @@ export default function Dashboard() {
             disabled={!canSave || saving}
             style={{ width: "100%", marginTop: 14, padding: 14, borderRadius: 8, border: "none", background: canSave ? "#B98B3E" : "#ddd", color: canSave ? "#16283D" : "#999", fontWeight: 700 }}
           >
-            {saving ? "Saving..." : "Save postcard"}
+            {saving ? "Saving..." : "Save Postcard"}
           </button>
         </Card>
 
